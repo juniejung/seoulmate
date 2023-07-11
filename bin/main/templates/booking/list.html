@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>예약내역</title>
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+	<!-- START : header -->
+	<header>
+		<div class="center">
+			<h1>
+				<a href="/"><img src="/img/logo.png" alt="서울메이트" />Soul? Seoul
+					Mate</a>
+			</h1>
+			<nav>
+				<div class="gnb">
+          <ul class="drop">
+            <li>
+              <a href="../place/gangnam.html">관광명소</a> 
+              <div class="place_background">
+                <div class="background_img">서울의 주요 관광지를 둘러보세요!</div>
+              </div> 
+              <ul class="down">
+                <li class="place gang"><a href="../place/gangnam.html">강남</a></li>
+                <li class="place gwang"><a href="../place/gwanghwamun.html">광화문</a></li>
+                <li class="place myeong"><a href="../place/myeongdong.html">명동</a></li>
+                <li class="place jam"><a href="../place/jamsil.html">잠실</a></li>
+                <li class="plcae hong"><a href="../place/hongdae.html">홍대</a></li>
+              </ul>       
+            </li>
+          </ul>
+					<ul class="drop">
+						<li><a href="/booking/add">투어버스 예약</a>
+							<ul class="down">
+								<li><a href="/booking/add">예약하기</a></li>
+								<li><a href="/booking/list">예약내역</a></li>
+							</ul></li>
+					</ul>
+					<ul class="drop">
+						<li><a href="/inquiry/add">문의</a>
+							<ul class="down">
+								<li><a href="/inquiry/add">문의하기</a></li>
+								<li><a href="/inquiry/list">문의내역</a></li>
+							</ul></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- END : header -->
+	<!-- START : container -->
+	<div id="list" class="container center">
+		<div class="location">
+			<span class="ar">투어버스 예약</span> <span class="ar"> > </span> <span>
+				예약내역</span>
+		</div>
+		<h2>예약 내역</h2>
+		<form th:action="@{/booking/list}" role="search" class="search">
+			<div class="row">
+				<input type="search" name="keyword" placeholder="성함을 입력하세요."
+					class="col form-control" aria-label="Search">
+				<button type="submit" class="col-1">
+					<img src="/img/search.svg" alt="검색">
+				</button>
+			</div>
+		</form>
+		<table class="table table-hover center align-middle">
+			<thead class="table-secondary">
+				<tr>
+					<th>예약번호</th>
+					<th>성함</th>
+					<th>연락처</th>
+					<th>예약날짜</th>
+					<th>출발시간</th>
+					<th>목적지</th>
+					<th>인원수</th>
+					<th>예약취소</th>
+					<th>문의하기</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="book : ${books}">
+					<td th:text="${book.id}">id</td>
+					<td th:text="${book.name}">이름</td>
+					<td th:text="${book.phone3}">연락처뒷자리</td>
+					<td th:text="${book.date}">예약날짜</td>
+					<td th:text="${book.time}">출발시간</td>
+					<td th:text="${book.destination}">지역</td>
+					<td th:text="${book.number}">인원수</td>
+					<td>
+						<form th:action="@{/booking/delete}" method="post" class="delete"
+							onsubmit="return confirm('정말로 삭제하시겠습니까?')">
+							<input type="hidden" name="_method" value="DELETE" /> <input
+								type="hidden" name="bookId" th:value="${book.id}" />
+							<button type="submit" class="btn btn-outline-secondary btn-sm">취소</button>
+						</form>
+					</td>
+					<td><button type="button"
+							th:onclick="|location.href='@{/inquiry/add/}${book.id}'|"
+							class="btn btn-outline-primary btn-sm">문의</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- END : container -->
+	<!-- START : footer -->
+	<footer>
+		<div class="center">
+			<div class="left">
+				<p class="logo">
+					<img src="/img/logo_white.png" alt="서울메이트" />
+				</p>
+				<div class="leftwrap">
+					<nav>
+						<ul>
+							<li><a href="../place/gangnam.html">관광명소</a></li>
+							<li><a href="/booking/add">투어버스 예약</a></li>
+							<li><a href="/inquiry/add">문의</a></li>
+						</ul>
+						<ul>
+							<li><a href="/join.html">이용약관</a></li>
+							<li><a href="/privacy.html">개인정보처리방침</a></li>
+						</ul>
+					</nav>
+					<address>Copyrights&copy; SeoulMate. All Rights Reserved.</address>
+				</div>
+			</div>
+			<div class="right">
+				<h3 class="blind">SNS list</h3>
+				<ul>
+					<li><a
+						href="https://www.facebook.com/SeoulTourismOrganization"><img
+							src="/img/facebook_footer.svg" alt="페이스북" /></a></li>
+					<li><a href="https://www.instagram.com/sto___official/"><img
+							src="/img/instagram_footer.svg" alt="인스타그램" /></a></li>
+					<li><a
+						href="https://www.youtube.com/channel/UCSPssxnqHu3LNG5IFcCPWCg"><img
+							src="/img/youtube_footer.svg" alt="유튜브" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- END : footer -->
+</body>
+</html>

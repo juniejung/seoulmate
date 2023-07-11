@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  <title>잠실</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/reset.css" >
+  <link rel="stylesheet" href="/css/main.css" >
+  <link rel="stylesheet" href="/css/place.css" >
+</head>
+<body>
+  <!-- START : header -->
+  <header>
+      <div class="center">
+        <h1>
+          <a href="/"><img src="/img/logo.png" alt="서울메이트" />Soul? Seoul Mate</a>
+        </h1>
+        <nav>
+          <div class="gnb">
+          <ul class="drop">
+            <li>
+              <a href="../place/gangnam.html">관광명소</a> 
+              <div class="place_background">
+                <div class="background_img">서울의 주요 관광지를 둘러보세요!</div>
+              </div> 
+              <ul class="down">
+                <li class="place gang"><a href="../place/gangnam.html">강남</a></li>
+                <li class="place gwang"><a href="../place/gwanghwamun.html">광화문</a></li>
+                <li class="place myeong"><a href="../place/myeongdong.html">명동</a></li>
+                <li class="place jam"><a href="../place/jamsil.html">잠실</a></li>
+                <li class="plcae hong"><a href="../place/hongdae.html">홍대</a></li>
+              </ul>       
+            </li>
+          </ul>
+            <ul class="drop">
+              <li>
+                <a href="/booking/add">투어버스 예약</a>
+                <ul class="down">
+                  <li><a href="/booking/add">예약하기</a></li>
+                  <li><a href="/booking/list">예약내역</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="drop">
+              <li>
+                <a href="/inquiry/add">문의</a>
+                <ul class="down">
+                  <li><a href="/inquiry/add">문의하기</a></li>
+                  <li><a href="/inquiry/list">문의내역</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- END : header -->
+    <!-- START : container -->
+    <div class="container center"> 
+      <div class="location">
+        <span class="ar">관광명소</span>
+        <span class="ar"> > </span>
+        <span> 잠실</span>
+      </div>
+      <div class="btn">
+        <form action="/booking/add">
+          <div class="box">
+              <div>예약신청</div>
+              <button type="submit">이동하기</button>
+          </div>
+        </form>
+      </div>      
+      <div>
+        <h2>잠실</h2>
+        <h3>롯데월드타워</h3>
+        <img src="/img/jamsil.PNG" alt="광화문 사진">
+        <p>555m, 123층의 거대한 수직도시 롯데월드타워에는 국내 최고 높이(500m) 전망대인 서울스카이(SEOUL SKY), <br><br>국내 최고 수준의 호텔 시그니엘서울(SIGNIEL SEOUL), 프리미엄 헬스케어센터와 피트니스센터,<br> 파이낸스센터가 입점한 포디엄이(PODIUM) 위치하여 그 높이만큼 특별한 가치를 경험할 수 있다.<br><br>
+        또한 글로벌 패션 허브 롯데월드몰에는 국내 최대 규모의 시내 면세점인 롯데면세점, 대한민국 최고, 최대의 명품 백화점 에비뉴엘,<br><br> 국내 최대 도심형 수족관 롯데월드 아쿠아리움, 국내 최초 빈야드 스타일 클래식 전용 홀인 롯데콘서트홀과<br><br> 아시아 최대 규모의 멀티플렉스 롯데시네마 등이 자리하여 첨단 라이프스타일과 놀랍고 차별화된 경험을 할 수 있다.</p>
+        <h3>어떻게 가지?</h3>
+        <div class="wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5322.532137354534!2d127.09850327515352!3d37.512716495207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca50a915f665b%3A0xabeb10cd5efdfce2!2z66Gv642w7JuU65Oc7YOA7JuM!5e0!3m2!1sko!2sgh!4v1680419727269!5m2!1sko!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <ul class="detail-map-info">
+          <li><span>주소</span><span>서울 송파구 올림픽로 300 (신천동)</span>
+         </li>
+         <li>
+          <span>교통 정보</span>
+          <span>2호선 잠실역 2번 출구 도보 5분</span>
+         </li>
+       </ul>             
+      </div>
+    </div>   
+    <!-- START : footer -->
+    <footer>
+      <div class="center">
+        <div class="left">
+          <p class="logo"><img src="/img/logo_white.png" alt="서울메이트" /></p>
+          <div class="leftwrap">
+          <nav>
+            <ul>
+              <li><a href="../place/gangnam.html">관광명소</a></li>
+              <li><a href="/booking/add">투어버스 예약</a></li>
+              <li><a href="/inquiry/add">문의</a></li>
+            </ul>
+            <ul>
+              <li><a href="/join.html">이용약관</a></li>
+              <li><a href="/privacy.html">개인정보처리방침</a></li>
+            </ul>
+          </nav>
+          <address>Copyrights&copy; SeoulMate. All Rights Reserved.</address>
+        </div>
+        </div>
+        <div class="right">
+          <h3 class="blind">SNS list</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/SeoulTourismOrganization"
+                ><img src="/img/facebook_footer.svg" alt="페이스북"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sto___official/"
+                ><img src="/img/instagram_footer.svg" alt="인스타그램"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCSPssxnqHu3LNG5IFcCPWCg"
+                ><img src="/img/youtube_footer.svg" alt="유튜브"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END : footer -->
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  <title>광화문</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/reset.css" >
+  <link rel="stylesheet" href="/css/main.css" >
+  <link rel="stylesheet" href="/css/place.css" >
+</head>
+<body>
+  <!-- START : header -->
+ <header>
+      <div class="center">
+        <h1>
+          <a href="/"><img src="/img/logo.png" alt="서울메이트" />Soul? Seoul Mate</a>
+        </h1>
+        <nav>
+          <div class="gnb">
+          <ul class="drop">
+            <li>
+              <a href="../place/gangnam.html">관광명소</a> 
+              <div class="place_background">
+                <div class="background_img">서울의 주요 관광지를 둘러보세요!</div>
+              </div> 
+              <ul class="down">
+                <li class="place gang"><a href="../place/gangnam.html">강남</a></li>
+                <li class="place gwang"><a href="../place/gwanghwamun.html">광화문</a></li>
+                <li class="place myeong"><a href="../place/myeongdong.html">명동</a></li>
+                <li class="place jam"><a href="../place/jamsil.html">잠실</a></li>
+                <li class="plcae hong"><a href="../place/hongdae.html">홍대</a></li>
+              </ul>       
+            </li>
+          </ul>
+            <ul class="drop">
+              <li>
+                <a href="/booking/add">투어버스 예약</a>
+                <ul class="down">
+                  <li><a href="/booking/add">예약하기</a></li>
+                  <li><a href="/booking/list">예약내역</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="drop">
+              <li>
+                <a href="/inquiry/add">문의</a>
+                <ul class="down">
+                  <li><a href="/inquiry/add">문의하기</a></li>
+                  <li><a href="/inquiry/list">문의내역</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- END : header -->
+    <!-- START : container -->
+    <div class="container center"> 
+      <div class="location">
+        <span class="ar">관광명소</span>
+        <span class="ar"> > </span>
+        <span>광화문</span>
+      </div>
+      <div class="btn">
+        <form action="/booking/add">
+          <div class="box">
+              <div>예약신청</div>
+              <button type="submit">이동하기</button>
+          </div>
+        </form>
+      </div>      
+      <div>
+        <h2>광화문</h2>
+        <h3>광화문 광화문광장</h3>
+        <img src="/img/gwanghwamun.PNG" alt="광화문 사진">
+        <p>종로구 세종로에 위치한 광화문광장은 크게 광화문에서 청계천 방향으로 '광화문의 역사를 회복하는 광장', <br>'육조거리의 풍경을 재현하는 광장', '한국의 대표 광장', '시민들이 참여하는 도시문화 광장', '도심 속의 광장', '청계천 연결부'로 나뉜다. 
+          <br>개별 공간의 특성을 바탕으로 역사성을 부활하고 문화와 휴식의 공간으로서 기능을 갖는다. 특히 '한국의 대표 광장'은 세종대왕 동상이 자리해 광장의 구심점 역할을 한다. </p>
+        <h3>어떻게 가지?</h3>
+        <div class="wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.294671606779!2d126.9745721156481!3d37.571678331590796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eb421c44ad%3A0xe955a50c118085f8!2z6rSR7ZmU66y46rSR7J6l!5e0!3m2!1sko!2sgh!4v1680416221225!5m2!1sko!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+        <ul class="detail-map-info">
+          <li><span>주소</span><span>서울특별시 종로구 세종대로 172</span>
+         </li>
+         <li>
+          <span>교통 정보</span>
+          <span>5호선 광화문 1번, 2번, 8번 출구</span>
+         </li>
+       </ul>       
+      </div>
+    </div>   
+    <!-- START : footer -->
+    <footer>
+      <div class="center">
+        <div class="left">
+          <p class="logo"><img src="/img/logo_white.png" alt="서울메이트" /></p>
+          <div class="leftwrap">
+          <nav>
+            <ul>
+              <li><a href="../place/gangnam.html">관광명소</a></li>
+              <li><a href="/booking/add">투어버스 예약</a></li>
+              <li><a href="/inquiry/add">문의</a></li>
+            </ul>
+            <ul>
+              <li><a href="/join.html">이용약관</a></li>
+              <li><a href="/privacy.html">개인정보처리방침</a></li>
+            </ul>
+          </nav>
+          <address>Copyrights&copy; SeoulMate. All Rights Reserved.</address>
+        </div>
+        </div>
+        <div class="right">
+          <h3 class="blind">SNS list</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/SeoulTourismOrganization"
+                ><img src="/img/facebook_footer.svg" alt="페이스북"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sto___official/"
+                ><img src="/img/instagram_footer.svg" alt="인스타그램"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCSPssxnqHu3LNG5IFcCPWCg"
+                ><img src="/img/youtube_footer.svg" alt="유튜브"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END : footer -->
+</body>
+
+</html>

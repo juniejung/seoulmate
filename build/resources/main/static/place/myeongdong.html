@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  <title>명동</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/reset.css" >
+  <link rel="stylesheet" href="/css/main.css" >
+  <link rel="stylesheet" href="/css/place.css" >
+</head>
+<body>
+  <!-- START : header -->
+  <header>
+      <div class="center">
+        <h1>
+          <a href="/"><img src="/img/logo.png" alt="서울메이트" />Soul? Seoul Mate</a>
+        </h1>
+        <nav>
+          <div class="gnb">
+          <ul class="drop">
+            <li>
+              <a href="../place/gangnam.html">관광명소</a> 
+              <div class="place_background">
+                <div class="background_img">서울의 주요 관광지를 둘러보세요!</div>
+              </div> 
+              <ul class="down">
+                <li class="place gang"><a href="../place/gangnam.html">강남</a></li>
+                <li class="place gwang"><a href="../place/gwanghwamun.html">광화문</a></li>
+                <li class="place myeong"><a href="../place/myeongdong.html">명동</a></li>
+                <li class="place jam"><a href="../place/jamsil.html">잠실</a></li>
+                <li class="plcae hong"><a href="../place/hongdae.html">홍대</a></li>
+              </ul>       
+            </li>
+          </ul>
+            <ul class="drop">
+              <li>
+                <a href="/booking/add">투어버스 예약</a>
+                <ul class="down">
+                  <li><a href="/booking/add">예약하기</a></li>
+                  <li><a href="/booking/list">예약내역</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="drop">
+              <li>
+                <a href="/inquiry/add">문의</a>
+                <ul class="down">
+                  <li><a href="/inquiry/add">문의하기</a></li>
+                  <li><a href="/inquiry/list">문의내역</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- END : header -->
+    <!-- START : container -->
+    <div class="container center"> 
+      <div class="location">
+        <span class="ar">관광명소</span>
+        <span class="ar"> > </span>
+        <span>명동</span>
+      </div>
+      <div class="btn">
+        <form action="/booking/add">
+          <div class="box">
+              <div>예약신청</div>
+              <button type="submit">이동하기</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2>명동</h2>
+        <h3>1898 명동 성당</h3>
+        <img src="/img/myeongdond.PNG" alt="명동 사진">
+        <p>‘1898 myeongdong cathedral(명동대성당)’은 많은 이들과 소통하고 나눔을 실천하고자 만들어진 복합문화공간이다.<br> 아늑한 햇살처럼 비춰지는 천정 조명 아래에서면 행복하고 특별한 느낌이 드는 따스한 공간은, 많은 이들의 쉼터가 되고자 한다.<br><br>쉽게 들러 맛있는 차와 소박한 다과를 나누며 이야기도 담아낼 수 있는 다정한 공간이 되기도 하고,<br><br>누군가를 위한 아름다운 꽃과 정성스러운 선물을 고를 수 있는 설레는 공간이 되기도 하며,<br><br> 특별한 가르침과 배움이 이루어지기는 교육의 공간이 되기도 하고, 책과 음악과 그림을 편안히 즐길 수 있는 문화예술 공간이 되기도 하는.<br> 모든 이를 위해 열려 있는 공간이 바로 1898 이다.</p>
+        <h3>어떻게 가지?</h3>
+        <div class="wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6554303794023!2d126.9828757318964!3d37.563181167473296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e54c5068b3%3A0x44b42da266a7c893!2z66qF64-Z64yA7ISx64u5!5e0!3m2!1sko!2sgh!4v1680418178171!5m2!1sko!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <ul class="detail-map-info">
+          <li><span>주소</span><span>서울 중구 명동길 74 (명동2가, 명동성당)</span>
+         </li>
+         <li>
+          <span>교통 정보</span>
+          <span>2호선 을지로입구역 5번 출구</span>
+         </li>
+       </ul>     
+      </div>
+    </div>   
+    <!-- START : footer -->
+    <footer>
+      <div class="center">
+        <div class="left">
+          <p class="logo"><img src="/img/logo_white.png" alt="서울메이트" /></p>
+          <div class="leftwrap">
+          <nav>
+            <ul>
+              <li><a href="../place/gangnam.html">관광명소</a></li>
+              <li><a href="/booking/add">투어버스 예약</a></li>
+              <li><a href="/inquiry/add">문의</a></li>
+            </ul>
+            <ul>
+              <li><a href="/join.html">이용약관</a></li>
+              <li><a href="/privacy.html">개인정보처리방침</a></li>
+            </ul>
+          </nav>
+          <address>Copyrights&copy; SeoulMate. All Rights Reserved.</address>
+        </div>
+        </div>
+        <div class="right">
+          <h3 class="blind">SNS list</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/SeoulTourismOrganization"
+                ><img src="/img/facebook_footer.svg" alt="페이스북"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sto___official/"
+                ><img src="/img/instagram_footer.svg" alt="인스타그램"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCSPssxnqHu3LNG5IFcCPWCg"
+                ><img src="/img/youtube_footer.svg" alt="유튜브"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END : footer -->
+</body>
+</html>

@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* container */
+
+#addform div.inputarea {
+    display: block;
+    border-radius: 15px;
+    top: 215.014px; 
+    left: 261.031px; 
+}
+#addform .text {
+    font-weight: bold; 
+    font-size: 35px; 
+    color: rgb(2, 47, 84);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#addform .form {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.227) 3px 3px 8px 0px;
+    background-color: rgb(2, 47, 84);
+    font-size: 20px; 
+    color: rgb(255, 255, 255);
+    width: 742px; 
+    height: 478px;
+    margin:0 auto;
+}
+#addform .block {
+    margin-left: 30px;
+    padding: 20px 0px 50px 50px;
+}
+
+#addform input {
+    font-family: "NanumBarunGothic";
+    color: rgb(94, 94, 94);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 20px 0px 10px 20px;
+    text-align: center;
+}
+#addform #name {
+    width: 160px;
+    height: 30px; 
+    margin-left: 85px;
+}
+#addform .phone:first-of-type{margin-left: 65px;}
+#addform .phone {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+#addform #date {
+    width: 110px;
+    height: 30px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+}
+#addform #place {
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    color: rgb(94, 94, 94);
+    margin: 20px;
+    margin-left: 50px;
+}
+#addform #number {
+    width: 80px;
+    height: 30px;
+    margin-left: 64px;
+    margin-bottom: 0px;
+}
+#addform #button {
+    text-align: center;
+    margin: 20px 80px 20px 80px;
+}
+#addform .cancel {
+    width: 136px;
+    height: 43px;
+    margin: 10px 150px;
+    color: rgb(64, 64, 64); 
+    background-color: rgb(224, 224, 224); 
+    font-size: 18px; 
+    text-align: center; 
+    line-height: 2.5em; 
+    border-radius: 4px;
+}
+#addform .submit {
+    width: 136px;
+    height: 43px;
+    color: #fff;
+    margin: 10px 50px; 
+    font-size: 18px; 
+    background-color: rgb(52, 152, 219); 
+    text-align: center; 
+    line-height: 2.5em; 
+    border-radius: 4px;
+}
